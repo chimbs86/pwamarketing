@@ -13,8 +13,18 @@ import 'ionicons';
 
 export namespace Components {
 
+  interface AppAddscript {
+    'name': string;
+  }
+  interface AppAddscriptAttributes extends StencilHTMLAttributes {
+    'name'?: string;
+  }
+
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
+
+  interface AppNon {}
+  interface AppNonAttributes extends StencilHTMLAttributes {}
 
   interface AppProfile {
     'name': string;
@@ -29,22 +39,38 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
+    'AppAddscript': Components.AppAddscript;
     'AppHome': Components.AppHome;
+    'AppNon': Components.AppNon;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
   }
 
   interface StencilIntrinsicElements {
+    'app-addscript': Components.AppAddscriptAttributes;
     'app-home': Components.AppHomeAttributes;
+    'app-non': Components.AppNonAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
   }
 
 
+  interface HTMLAppAddscriptElement extends Components.AppAddscript, HTMLStencilElement {}
+  var HTMLAppAddscriptElement: {
+    prototype: HTMLAppAddscriptElement;
+    new (): HTMLAppAddscriptElement;
+  };
+
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppNonElement extends Components.AppNon, HTMLStencilElement {}
+  var HTMLAppNonElement: {
+    prototype: HTMLAppNonElement;
+    new (): HTMLAppNonElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -60,13 +86,17 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
+    'app-addscript': HTMLAppAddscriptElement
     'app-home': HTMLAppHomeElement
+    'app-non': HTMLAppNonElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
   }
 
   interface ElementTagNameMap {
+    'app-addscript': HTMLAppAddscriptElement;
     'app-home': HTMLAppHomeElement;
+    'app-non': HTMLAppNonElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
   }
