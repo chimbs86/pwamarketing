@@ -26,7 +26,20 @@
 
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+  <script>
 
+
+    var check = function (){
+      if(window.innerHeight <= window.innerWidth)
+      {
+      }
+      else{
+        window.location="check"
+
+      }
+
+    }
+  </script>
   <link rel="manifest" href="/manifest.json">
 </head>
 
@@ -37,6 +50,17 @@
 
 
   <app-root></app-root>
+<script>
+  AFRAME.registerComponent("foo", {
+    init: function() {
+      var playthisvid_1 = document.querySelector('#playbutton_1');
 
+      playthisvid_1.addEventListener('click', () => {
+        console.log("it clicks");
+      })
+    }
+  })
+
+</script>
 
 </html>

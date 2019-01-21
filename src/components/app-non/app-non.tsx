@@ -9,8 +9,12 @@ export class AppNon {
   render() {
     return [
 <body>
-      <a-scene>
+      <a-scene cursor="rayOrigin: mouse" foo >
         <a-assets>
+          <a-asset-item id="tree" src="/assets/icon/Patrick.gltf"></a-asset-item>
+          <img src="/assets/icon/person.png" id="chrome"/>
+          {/*<video id="penguin" autoPlay="true" loop src="/assets/icon/game.mov"></video>*/}
+
           <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" />
           <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" />
             <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome"/>
@@ -39,43 +43,89 @@ export class AppNon {
         <a-entity
           geometry="primitive: plane; width: 0; height: auto"
           material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Software Developer at Adconion Media group; color:white"
+          position='1 1.5 0'
+          rotation='-0 -90 -0'>
+
+
+        </a-entity>
+
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
           text="value: Platform Developer at Pulsepoint Inc; color:white"
-          position='-1 1.5 1'
+          position='-0.5 1.5 1'
           rotation='-180 -0 -180'>
 
 
         </a-entity>
-        <a-image src="/assets/icon/amg.png" position='1 1.7 1' scale="0.2 0.2 0.2"
+        <a-image src="/assets/icon/adconion.png" position='.19 1.65 0' scale="0.05 0.05 0.05"
                  rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
           <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
 
 
         </a-image>
-        <a-image src="/assets/icon/pp.png" position='-0.75 1.7 1' scale="0.2 0.2 0.2"
+        <a-image src="/assets/icon/pp.png" position='-0.45 1.7 1' scale="0.2 0.2 0.2"
                  rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
           <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
 
 
         </a-image>
 
-        <a-image src="/assets/icon/rit_logo.png" position='1 2.5 -2'
+
+
+        {/*<a-image src="/assets/icon/person.png" position='0 2.2 -1.5' scale="1 1 1"*/}
+                 {/*rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">*/}
+          {/*<a-animation easing="linear" attribute="rotation" dur="10000" to='-180 90 -180' repeat="indefinite"></a-animation>*/}
+
+
+        {/*</a-image>*/}
+        {/*<a-entity gltf-model="/assets/icon/Patrick.gltf"  position='0 1 -1.5' scale=".5 0.5 0.5"*/}
+                  {/*rotation='-180 -90 -180' >*/}
+          {/*<a-animation easing="linear" attribute="rotation" dur="10000" to="-180 -0 -180" repeat="indefinite"></a-animation>*/}
+        {/*</a-entity>*/}
+
+
+        <a-image  src="/assets/icon/rit_logo.png" position='1.75 2.1 -1.5' scale=".45 0.45 0.45"
                  rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
           <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
 
 
         </a-image>
+
         <a-entity
           geometry="primitive: plane; width: 0; height: auto"
           material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
-          text="value: Master of Science - Computer Science; color:white"
-          position='1.5 1.5 -2'
-          scale="2 5 2"
+          text="value: Gaurav Raje \n Software Developer, DBA, Cloud Software Architect(Azure and AWS)  ; color:white; align:center"
+          position='0 1 -1.5'
+          scale="1.7 1.7 1"
           rotation='-0 0 0'>
 
 
         </a-entity>
 
-        <a-image src="/assets/icon/nyu_logo.png" position='-1 2.5 -2'
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Chimbs The Game, available on the google play store\n click to play video  ; color:white; align:center"
+          position='0 2.75 -1.5'
+          scale="1 1 1"
+          rotation='-0 0 0'>
+
+
+        </a-entity>
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Master of Science - Computer Science\n Rochester Institute of Technology; color:white"
+          position='2 1.75 -1.45'
+          scale="1 1.2 1"
+          rotation='-0 -45 0'>
+
+
+        </a-entity>
+
+        <a-image src="/assets/icon/nyu_logo.png" position='-2 2.1 -1.5' scale="0.5 0.5 0.5"
                  rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
           <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
 
@@ -85,13 +135,55 @@ export class AppNon {
         <a-entity
           geometry="primitive: plane; width: 0; height: auto"
           material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
-          text="value: Master of Business Administration - Finance \n currently enrolled ; color:white"
-          position='-1.5 1.5 -2'
-          scale="2 5 2"
+          text="value: Master of Business Administration - Finance \n NYU Stern school of business. (currently enrolled) ; color:white"
+          position='-2 1.75 -1.75'
+          scale="1 1.2 1"
+          rotation='-0 65 0'>
+
+
+        </a-entity>
+
+
+
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Drag to explore; color:white;align:center"
+          position='0 1 -1'
+          scale="2 2 2"
+          rotation='-90 0 0'>
+
+
+        </a-entity>
+
+
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Game Developer, Open source contributor; color:white"
+          position='1 1.5 1.45'
+          scale=".95 1.2 0.95"
+          rotation='-0 -135 0'>
+
+
+        </a-entity>
+        <a-video src="/assets/icon/game.mov"  position='0 2 -1.5' autoplay loop = 'true'
+                 scale="1.5 1.2 1"
+                 rotation='-0 -0 0'></a-video>
+
+        <a-entity id="playbutton_1"
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: <- Click Here ; color:white; align:center"
+          position='0.6 1.45 -1.5'
+          scale="1 1 1"
           rotation='-0 0 0'>
 
 
         </a-entity>
+
+
+
         <a-image src="/assets/icon/ias.png" position='-0.19 1.65 0' scale="0.1 0.1 0.1"
                  rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
           <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>

@@ -8,13 +8,18 @@ export class AppHome {
 
   render() {
     return [
-      <body>
 
+      <body>
+      <script>
+check();
+      </script>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
 
         <a-assets>
-
+          <a-asset-item id="model" src="/assets/icon/model.gltf"></a-asset-item>
+          <a-asset-item id="mhead" src="/assets/icon/mhead.gltf"></a-asset-item>
+          <a-asset-item id="assetAframe" src="/assets/icon/head.ply"></a-asset-item>
           <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg"/>
           <video id="penguin" autoplay="true" loop  src="/assets/icon/game.mov"></video>
 

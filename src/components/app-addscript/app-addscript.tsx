@@ -18,8 +18,9 @@ export class AppAddScript {
 
   render() {
     return [
-      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
-
+      <body>
+      <h1>Please use Landscape mode </h1>
+      </body>
     ];
   }
 }
