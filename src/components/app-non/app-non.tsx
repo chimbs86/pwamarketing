@@ -23,10 +23,81 @@ export class AppNon {
                             src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
         </a-assets>
 
-        <a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -10" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
-          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+        {/*<a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -10" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">*/}
+          {/*<a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>*/}
+        {/*</a-entity>*/}
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Enterprise Software Developer at Integral Ad Science; color:white"
+          position='-1 1.5 0'
+          rotation='-180 -90 -180'>
+
+
         </a-entity>
 
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Platform Developer at Pulsepoint Inc; color:white"
+          position='-1 1.5 1'
+          rotation='-180 -0 -180'>
+
+
+        </a-entity>
+        <a-image src="/assets/icon/amg.png" position='1 1.7 1' scale="0.2 0.2 0.2"
+                 rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+
+
+        </a-image>
+        <a-image src="/assets/icon/pp.png" position='-0.75 1.7 1' scale="0.2 0.2 0.2"
+                 rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+
+
+        </a-image>
+
+        <a-image src="/assets/icon/rit_logo.png" position='1 2.5 -2'
+                 rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+
+
+        </a-image>
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Master of Science - Computer Science; color:white"
+          position='1.5 1.5 -2'
+          scale="2 5 2"
+          rotation='-0 0 0'>
+
+
+        </a-entity>
+
+        <a-image src="/assets/icon/nyu_logo.png" position='-1 2.5 -2'
+                 rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+
+
+        </a-image>
+
+        <a-entity
+          geometry="primitive: plane; width: 0; height: auto"
+          material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;"
+          text="value: Master of Business Administration - Finance \n currently enrolled ; color:white"
+          position='-1.5 1.5 -2'
+          scale="2 5 2"
+          rotation='-0 0 0'>
+
+
+        </a-entity>
+        <a-image src="/assets/icon/ias.png" position='-0.19 1.65 0' scale="0.1 0.1 0.1"
+                 rotation='-180 -90 -180' material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+          <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+
+
+        </a-image>
 
         <a-entity position="-3 1 -6" rotation="5 0 0">
           <a-entity
