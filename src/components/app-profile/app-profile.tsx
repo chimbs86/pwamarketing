@@ -18,12 +18,7 @@ export class AppProfile {
 
   render() {
     return [
-      <ion-app>
-        <ion-router useHash={false}>
-          <ion-route url="/" component="app-addscript" />
-        </ion-router>
-        <ion-nav />
-      </ion-app>
+
     ];
   }
 }

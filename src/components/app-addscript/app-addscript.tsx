@@ -18,8 +18,10 @@ export class AppAddScript {
 
   render() {
     return [
+      
       <body>
       <h1>Please use Landscape mode </h1>
+      <center><a href = "/">Refresh</a></center>
       </body>
     ];
   }
