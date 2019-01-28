@@ -11,17 +11,16 @@ export class AppHome {
 
       <body>
       <script>
-check();
+        check();
       </script>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-
 
         <a-assets>
           <a-asset-item id="model" src="/assets/icon/model.gltf"></a-asset-item>
           <a-asset-item id="mhead" src="/assets/icon/mhead.gltf"></a-asset-item>
           <a-asset-item id="assetAframe" src="/assets/icon/head.ply"></a-asset-item>
           <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg"/>
-          <video id="penguin" loop autoplay="true"   src="/assets/icon/game.mov"></video>
+          <video id="penguin" loop autoplay="true" src="/assets/icon/game.mov"></video>
 
 
         </a-assets>
@@ -74,7 +73,7 @@ check();
 
           </a-entity>
 
-          <a-image src="/assets/icon/ias.png" rotation='-90 0 0'  position='-1 3 0'>
+          <a-image src="/assets/icon/ias.png" rotation='-90 0 0' position='-0.5 0 0'>
 
           </a-image>
 
@@ -89,7 +88,7 @@ check();
             rotation='-90 0 0'>
 
           </a-entity>
-          <a-image src="/assets/icon/pp.png" rotation='-90 0 0'  position='1 1.5 0'>
+          <a-image src="/assets/icon/pp.png" rotation='-90 0 0' position='0 0 0'>
 
           </a-image>
 
@@ -99,9 +98,16 @@ check();
           {/*<a-entity scale="0.05 0.05 0.05" geometry="primitive: torusKnot" position="0 0 -0" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">*/}
           {/*<a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>*/}
           {/*</a-entity>*/}
-          <a-image src="/assets/icon/gradcap.png" rotation='-90 0 0' scale="0.15 0.15 0.15">
+          <a-entity
+            geometry="primitive: plane; width: 0; height: auto"
+            material="color: white"
+            text="value: Quarter Finalist for Social Innovation Track with the venture qualifying to the final\n 10 out of an initial 250 companies; color:black"
+            position='-3 1.5 0'
+            scale='4 4 4'
+            id="chimbsRocks"
+            rotation='-90 0 0'>
 
-          </a-image>
+          </a-entity>
 
 
         </a-marker>
@@ -113,7 +119,7 @@ check();
 
         <a-marker preset='kanji'>
 
-          <a-video src="#penguin" width="3" height="3" position="-0 -15 0" rotation='-90 0 0'></a-video>
+          <a-video src="#penguin" width="4.5" height="4.5" position="-0 -7 0" rotation='-90 0 0'></a-video>
         </a-marker>
 
         <a-entity camera></a-entity>
